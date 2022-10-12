@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~formiojs/dist/formio.full.min.css';
+@import '~antd/dist/antd.min.css';
+@import '~react-toastify/dist/ReactToastify.css';
+/* @import '~formiojs/dist/formio.full.css'; */
+
+/* mt-1 {
+    margin-top: 4px;
+}
+mt-2 {
+    margin-top: 8px;
+}
+mt-3 {
+    margin-top: 12px;
+}
+mt-4 {
+    margin-top: 16px;
+}
+mt-5 {
+    margin-top: 20px;
+} */
+ml-1 {
+    margin-left: 4px;
+}
+ml-2 {
+    margin-left: 8px;
+}
+ml-3 {
+    margin-left: 12px;
+}
+ml-4 {
+    margin-left: 16px;
+}
+ml-5 {
+    margin-left: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* css element */
+.form-builder button[ref="sidebar-anchor"] {
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-builder div[ref="sidebar-container"] > span {
+    width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-builder div[ref="-container"] > span.drag-copy {
+    width: 100%;
+    margin: 4px 0;
 }
 
-.App-link {
-  color: #61dafb;
+/* Ant design css */
+.ant-input {
+    border-radius: 6px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ant-back-top {
+    right: 35px;
 }

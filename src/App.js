@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { ToastContainer } from 'react-toastify';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import CreateForm from './components/form/CreateForm';
+import ListForm from './components/form/ListForm';
+import PreviewForm from './components/form/PreviewForm';
+// import FormioContrib from '@formio/contrib';
+// Formio.use(FormioContrib);
+
+// ----------------------------------------------------------------
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <BrowserRouter>
+                <Routes>
+                    <Route index path="/" element={<ListForm />} />
+                    <Route path="/create" element={<CreateForm />} />
+                    <Route path="/preview" element={<PreviewForm />} />
+                </Routes>
+            </BrowserRouter>
+            <ToastContainer />
+        </>
+    );
 }
 
 export default App;
