@@ -16,8 +16,8 @@ You may also see any lint errors in the console.
 
 ### `yarn server`
 
-Runs server with port 5000
-Use mongoDB on local, requires the computer to have mongoDB installed
+Runs server with port 5000.
+Use mongoDB on local, requires the computer to have mongoDB installed.
 If your computer does not have it installed, you can download [https://www.mongodb.com/try/download/community2]
 
 ### `note`
