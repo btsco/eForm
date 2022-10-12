@@ -156,7 +156,7 @@ const CreateForm = () => {
                                 <FormBuilder
                                     form={{
                                         display: 'form',
-                                        components: data
+                                        components: data?.json.includes('"display":"form"')
                                             ? JSON.parse(data?.json)['components']
                                             : formik.values.json
                                             ? JSON.parse(formik.values.json)['components']

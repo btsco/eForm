@@ -44,7 +44,7 @@ const PreviewForm = () => {
                 </div>
             </div>
             <div>
-                <Form form={data ? JSON.parse(data?.json) : {}} options={{ noAlerts: true }} />
+                <Form form={data?.json.includes('"display":"form"') ? JSON.parse(data?.json) : {}} options={{ noAlerts: true }} />
             </div>
         </div>
     );
