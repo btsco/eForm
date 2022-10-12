@@ -2,9 +2,10 @@ import axios from 'axios';
 import queryString from 'query-string';
 
 const URI = 'http://127.0.0.1:5000/api';
+const URI_ONL = 'https://server-eform.vercel.app/api';
 
 const axiosServices = axios.create({
-    baseURL: URI,
+    baseURL: process.env.NODE_ENV === 'production' ? URI_ONL : URI,
     headers: {
         'Content-Type': 'application/json'
     },
